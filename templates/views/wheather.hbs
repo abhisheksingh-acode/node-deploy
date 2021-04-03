@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{>header}}
+   <title>Check live wheather of your city</title>
+   <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   {{>navbar}}
+
+ <div class="container w-100 mt-3" id="outputContainer">
+    <form class="mx-auto text-center w-auto ">
+       <div class="border rounded-pill border-primary d-flex justify-content-between p-2 bg-dark">
+          <input type="search" name="city" placeholder="search for your city" class=" border-0 w-100 text-white" />
+            <button type="submit" name="findTemp" class="btn ml-auto bg-primary rounded-pill"><i class="fas fa-search bg-primary text-white"></i></button>
+       </div>
+    </form>
+
+    <div class="w-auto bg-dark text-white border border-dark mx-auto mt-5 p-4 rounded-3">
+         <div class="date w-100 d-flex justify-content-between p-2">
+            <span>{{day}}</span> <span>{{date}}-{{month}}</span>
+         </div>
+         <div class="info p-2 text-center">
+            <p class="city">{{city}},{{country}} </p>
+            <h1 class="temp">
+               {{temp}}℃ <i class="fas fa-cloud"></i>
+            </h1>
+         </div>
+    </div>
+ </div>
+
+
+
+   {{>footer}}
+</body>
+</html>

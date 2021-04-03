@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+       <title>About page created by express js</title>
+             <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    {{>navbar}}
+
+       <div class="container-fluid d-flex flex-row-reverse row justify-content-center align-items-center h-75">
+       <div class="text-container col-6 text-justify">
+          <h5 class="text-secondary">Welcome to about page</h5>
+          <h2 class="text-secondary">I am a <span class="text-info">MERN stack</span> developer<br>front-end and backend developer </h2>
+          <a href="/wheather" class="btn btn-warning">check</a>
+       </div>
+       <div class="image-container d-flex col-6 justify-content-end">
+            <img src="https://i.pinimg.com/736x/2d/1c/c2/2d1cc2c80acb545d5b7995ae7ba4443f.jpg" alt="" width="300px" height="300px">
+            </div>
+       </div>
+    </div>
+    {{>footer}}
+    </div>
+</body>
+</html>

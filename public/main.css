@@ -1,0 +1,32 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+#appImage{
+      animation: fly 2s linear infinite alternate;
+}
+input,button{
+   outline: none;
+   background:none;
+}
+input::placeholder{
+   color: white;
+}
+#outputContainer{
+   max-width: 400px;
+}
+@keyframes fly{
+   0%{
+      margin-top: 0;
+   }
+   100%{
+      margin-top: 100px;
+   }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>header}}
+   <title>express js homepage</title>
+      <link rel="stylesheet" href="main.css">
+</head>
+<body >
+   {{>navbar}}
+    
+    <div class="container-fluid d-flex row justify-content-center align-items-center h-100">
+       <div class="text-container col-8 text-center order-md-0 order-1">
+          <h5 class="text-secondary">Welcome to live wheather app</h5>
+          <h2 class="text-secondary">Get real time <span class="text-info">wheather</span> info of your city</h2>
+          <a href="/wheather" class="btn btn-warning">check</a>
+       </div>
+       <div class="image-container d-flex justify-content-center col-4 text-center">
+            <img src="images/app.png" alt="" class="img-fluid w-50 h-50" {{!--<id="appImage"</id>>--}} >
+            </div>
+       </div>
+    </div>
+     
+    {{>footer}}
+   </div>
+</body>
+</html>
