@@ -5,6 +5,8 @@ const hbs = require('hbs');
 const requests = require('requests');
 const { request } = require('express');
 
+const port = process.env.PORT || 3000 ;
+
 const staticPath = path.join(__dirname,"../public");
 const tempPath = path.join(__dirname,"../templates/views");
 const partialPath = path.join(__dirname,"../templates/partials");
@@ -69,7 +71,7 @@ app.get('*',(req, res)=>{
       res.render('errorPage');
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
   console.log('listening');
 })
 
